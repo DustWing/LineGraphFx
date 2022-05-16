@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="300.0" minWidth="500.0" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.linegraphfx.Graph">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="Test" onAction="#onTestBtnPress"/>
+            <ComboBox prefWidth="150.0" />
+            <DatePicker>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></DatePicker>
+            <DatePicker />
+         </children>
+      </HBox>
+      <LineChart fx:id="lineGraph" animated="false" prefHeight="685.0" prefWidth="1200.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</VBox>
